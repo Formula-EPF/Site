@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EPF Formula">
+  <rect width="64" height="64" fill="#0f1013" />
+  <!-- Chevron incliné repris du logo officiel -->
+  <path d="M12 20h30l-6 11H12z" fill="#f00012" />
+  <path d="M12 36h22l-5 9H12z" fill="#ffffff" />
+</svg>

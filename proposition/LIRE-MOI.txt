@@ -1,0 +1,15 @@
+Site Formula EPF en HTML + CSS
+================================
+
+Ouvrir le site
+  Double-clic sur index.html
+  ou, dans ce dossier :  python -m http.server 8080
+  puis http://localhost:8080
+
+Fichiers
+  *.html     pages
+  css/styles.css
+  js/site.js   (menu mobile, formulaire, apparition au scroll)
+  images/
+
+Pas de React, pas de npm. Pour envoyer le site : zipper le dossier html.
