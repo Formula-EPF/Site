@@ -59,6 +59,58 @@
     });
   }
 
+  var poleMembers = {
+    communications: [],
+    event: [],
+  };
+
+  function poleCard(member) {
+    var initials = (member.firstName.charAt(0) + member.lastName.charAt(0)).toUpperCase();
+    var media = member.photo
+      ? '<img src="' + member.photo + '" alt="Portrait de ' + member.firstName + " " + member.lastName + '" width="400" height="400" loading="lazy" />'
+      : '<div class="mono" aria-hidden="true">' + initials + "</div>";
+    var role = member.role ? "<p>" + member.role + "</p>" : "";
+    return (
+      "<li><article class=\"member\">" +
+      '<div class="member__photo">' + media + "</div>" +
+      "<h3>" + member.firstName + " <span>" + member.lastName + "</span></h3>" +
+      role +
+      "</article></li>"
+    );
+  }
+
+  Object.keys(poleMembers).forEach(function (key) {
+    var grid = document.querySelector('[data-pole-grid="' + key + '"]');
+    var empty = document.querySelector('[data-pole-empty="' + key + '"]');
+    var list = poleMembers[key];
+    if (!grid) return;
+    if (list.length) {
+      grid.innerHTML = list.map(poleCard).join("");
+      grid.classList.add("is-filled");
+      if (empty) empty.hidden = true;
+    }
+  });
+
+  document.querySelectorAll(".member__more").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var id = btn.getAttribute("aria-controls");
+      var dlg = id && document.getElementById(id);
+      if (dlg && typeof dlg.showModal === "function") dlg.showModal();
+    });
+  });
+
+  document.querySelectorAll(".pole-dialog").forEach(function (dlg) {
+    dlg.querySelectorAll("[data-close-dialog]").forEach(function (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        dlg.close();
+      });
+    });
+    dlg.addEventListener("click", function (e) {
+      var panel = dlg.querySelector(".pole-dialog__panel");
+      if (e.target === dlg || (panel && !panel.contains(e.target))) dlg.close();
+    });
+  });
+
   var form = document.getElementById("contact-form");
   if (!form) return;
 

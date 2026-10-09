@@ -990,6 +990,124 @@ body.nav-open {
   color: var(--race-600);
 }
 
+.member__more {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--race-500);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(15, 16, 19, 0.4);
+  transition: background 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.member__more svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.member__more:hover,
+.member__more:focus-visible {
+  background: var(--race-600);
+  transform: scale(1.08);
+}
+
+.pole-dialog {
+  width: min(52rem, calc(100vw - 2rem));
+  max-height: min(90vh, 44rem);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--body);
+}
+
+.pole-dialog::backdrop {
+  background: rgba(8, 9, 11, 0.72);
+}
+
+.pole-dialog__panel {
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 32px 80px rgba(8, 9, 11, 0.45);
+}
+
+.pole-dialog__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.pole-dialog__head h2 {
+  font-size: 1.35rem;
+}
+
+.pole-dialog__close {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--mist);
+  color: var(--ink-900);
+  cursor: pointer;
+}
+
+.pole-dialog__close svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.pole-dialog__close:hover,
+.pole-dialog__close:focus-visible {
+  background: var(--line);
+}
+
+.pole-dialog__body {
+  padding: 1.5rem;
+  overflow: auto;
+  max-height: min(70vh, 34rem);
+}
+
+.pole-dialog__grid {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.pole-dialog__grid.is-filled {
+  display: grid;
+}
+
+.pole-dialog__empty {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.pole-dialog__empty[hidden] {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .pole-dialog__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .note {
   max-width: 48rem;
   margin-top: 2.5rem;
@@ -1152,7 +1270,7 @@ body.nav-open {
   color: var(--race-500);
 }
 
-.check--off {
+.check.check--off {
   color: #ce0000;
 }
 
