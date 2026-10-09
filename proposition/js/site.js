@@ -115,7 +115,7 @@
       .join("\n");
 
     window.location.href =
-      "mailto:contact@formula-epf.fr?subject=" +
+      "mailto:sponsor.formulaepf@epfedu.fr?subject=" +
       encodeURIComponent(subject.value) +
       "&body=" +
       encodeURIComponent(body);
