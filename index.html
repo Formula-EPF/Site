@@ -1,414 +1,286 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Formula EPF — Association étudiante d'ingénierie automobile</title>
-<meta name="description" content="Formula EPF — association étudiante de l'EPF dédiée à la conception et fabrication de véhicules. Caisse à savon, Formula Student, formation CAO." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Familjen+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f1013" />
+  <title>Formula EPF — Association étudiante d’ingénierie automobile</title>
+  <meta name="description" content="Formula EPF est l’association étudiante d’ingénierie automobile de l’EPF, fondée en 2020 : caisse à savon, monoplace de Formula Student et formation CAO ouverte à toute l’école." />
+  <link rel="canonical" href="https://formula-epf.fr/" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Formula EPF" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Formula EPF — Association étudiante d’ingénierie automobile" />
+  <meta property="og:description" content="Formula EPF est l’association étudiante d’ingénierie automobile de l’EPF, fondée en 2020 : caisse à savon, monoplace de Formula Student et formation CAO ouverte à toute l’école." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  
 </head>
 <body>
-
-<!-- ===================================================== NAV -->
-<nav class="top">
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="brand-line" aria-hidden="true"></div>
   <div class="wrap">
-    <a href="index.html" class="logo">
-      <span class="logo-mark"></span>
-      <span><strong>EPF</strong> FORMULA</span>
-    </a>
-    <ul>
-      <li><a href="index.html" class="active">Accueil</a></li>
-      <li><a href="caisse-a-savon.html">Caisse à savon</a></li>
-      <li><a href="formula-student.html">Formula Student</a></li>
-      <li><a href="formation-cao.html">Formation CAO</a></li>
-      <li><a href="#sponsors">Partenaires</a></li>
-    </ul>
-    <a href="#contact" class="cta-nav">Contact</a>
-  </div>
-</nav>
-
-<!-- ===================================================== HERO -->
-<header class="hero" id="top">
-  <div class="wrap">
-
-    <dl class="hero-meta">
-      <div>
-        <dt>Association</dt>
-        <dd>Loi 1901</dd>
-      </div>
-      <div>
-        <dt>Créée en</dt>
-        <dd>2020</dd>
-      </div>
-      <div>
-        <dt>École</dt>
-        <dd>EPF</dd>
-      </div>
-      <div>
-        <dt>Statut</dt>
-        <dd class="live">Active</dd>
-      </div>
-    </dl>
-
-    <h1 class="display">
-      Concevoir,<br>
-      fabriquer, <span class="accent">courir.</span>
-    </h1>
-
-    <p class="hero-lead">
-      <strong>Formula EPF</strong> est l'association étudiante d'ingénierie automobile de l'EPF.
-      Nous rassemblons des étudiants autour de projets concrets de conception, fabrication
-      et participation à des compétitions, avec une vocation pédagogique assumée :
-      apprendre l'ingénierie en construisant pour de vrai.
-    </p>
-
-    <div class="hero-cta">
-      <a href="#projets" class="btn btn--primary">
-        Découvrir nos projets <span class="arr">→</span>
+    <div class="nav-bar">
+      <a class="logo" href="index.html" aria-label="EPF Formula Team — retour à l’accueil">
+        <img src="images/brand/logo-epf-formula.webp" width="378" height="143" alt="EPF Formula Team — Racing Team" />
       </a>
-      <a href="#sponsors" class="btn btn--ghost">
-        Devenir partenaire
-      </a>
-    </div>
-
-  </div>
-</header>
-
-<!-- ===================================================== §01 L'ASSOCIATION -->
-<section class="sec" id="association">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">§01</span>
-      <h2 class="sec-title">L'association</h2>
-      <span class="sec-tag">/ Identité</span>
-    </div>
-
-    <div class="two-col">
-      <div>
-        <p>
-          Formula EPF est une association loi 1901 à vocation pédagogique,
-          gérée intégralement par des étudiants de l'EPF. Elle a pour objet
-          de rassembler des étudiants autour de projets de conception, fabrication
-          ou rénovation de véhicules — thermiques, électriques, à hydrogène,
-          efficients ou autonomes — en vue de compétitions étudiantes et amateures.
-        </p>
-        <p class="muted">
-          Nos projets sont des terrains d'application concrets. Ils permettent
-          aux membres de se confronter aux problématiques réelles de l'industrie
-          automobile, de la mobilité électrique et des véhicules intelligents,
-          en abordant aussi bien la conception, la simulation, la fabrication
-          que la gestion de projet.
-        </p>
-        <p class="muted">
-          L'association est ouverte à tous les étudiants de l'EPF, sans prérequis
-          autre que la motivation. Chacun trouve sa place selon ses centres d'intérêt :
-          mécanique, électronique, communication, gestion, événementiel.
-        </p>
-      </div>
-
-      <aside class="side-quote">
-        <span class="label">Objet statutaire</span>
-        <blockquote>
-          « Concevoir, fabriquer ou rénover un ou plusieurs véhicules afin
-          de participer à des compétitions étudiantes et amateures, dans une
-          démarche pédagogique d'apprentissage de l'ingénierie automobile. »
-        </blockquote>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== §02 NOS PROJETS -->
-<section class="sec" id="projets">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">§02</span>
-      <h2 class="sec-title">Nos projets</h2>
-      <span class="sec-tag">/ 3 chantiers en cours</span>
-    </div>
-
-    <div class="project-grid">
-
-      <a href="caisse-a-savon.html" class="project-card">
-        <div class="pc-status wip"><span class="dot"></span> Phase assemblage</div>
-        <h3>Caisse à savon</h3>
-        <div class="pc-sub">Premier projet concret de l'asso</div>
-        <p>
-          Notre premier véhicule : une caisse à savon conçue et fabriquée
-          en interne. Le projet est aujourd'hui en phase d'assemblage —
-          c'est notre première mise en pratique complète, du dessin au véhicule fini.
-        </p>
-        <div class="pc-link">
-          <span>Voir le projet</span>
-          <span class="arr">→</span>
-        </div>
-      </a>
-
-      <a href="formula-student.html" class="project-card">
-        <div class="pc-status early"><span class="dot"></span> Phase conception</div>
-        <h3>Formula Student</h3>
-        <div class="pc-sub">Monoplace de course étudiante</div>
-        <p>
-          Conception d'une monoplace de Formula Student, développée
-          en interne sous-système par sous-système. Le projet est en
-          phase d'études : dimensionnement, choix techniques, validation analytique.
-        </p>
-        <div class="pc-link">
-          <span>Voir le projet</span>
-          <span class="arr">→</span>
-        </div>
-      </a>
-
-      <a href="formation-cao.html" class="project-card">
-        <div class="pc-status live"><span class="dot"></span> Active</div>
-        <h3>Formation CAO</h3>
-        <div class="pc-sub">Catia V5 — gratuit, ouvert à toute l'EPF</div>
-        <p>
-          Une auto-formation à la CAO sur Catia V5, animée par les
-          membres de l'association. Ouverte gratuitement à tous les étudiants
-          de l'EPF, qu'ils soient membres de l'asso ou non.
-        </p>
-        <div class="pc-link">
-          <span>S'inscrire</span>
-          <span class="arr">→</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== §03 VOCATION -->
-<section class="sec" id="vocation">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">§03</span>
-      <h2 class="sec-title">Vocation pédagogique</h2>
-      <span class="sec-tag">/ Pourquoi nous existons</span>
-    </div>
-
-    <div class="card-grid">
-      <div class="card">
-        <span class="num">01 / Apprendre</span>
-        <h3>L'ingénierie en faisant</h3>
-        <p>
-          On retient mieux ce qu'on a fabriqué. Nos projets confrontent
-          les membres à des décisions techniques réelles, des contraintes
-          de fabrication, des erreurs à corriger — la formation que les cours
-          ne peuvent pas reproduire.
-        </p>
-      </div>
-
-      <div class="card">
-        <span class="num">02 / Transmettre</span>
-        <h3>Partager les compétences</h3>
-        <p>
-          Les compétences acquises sont restituées à la communauté étudiante
-          via nos formations ouvertes. La connaissance circule entre promotions
-          et reste dans l'école.
-        </p>
-      </div>
-
-      <div class="card">
-        <span class="num">03 / S'organiser</span>
-        <h3>Travailler en équipe projet</h3>
-        <p>
-          Au-delà de la technique, nos projets forment à la conduite de projet
-          en équipe : planification, coordination, livrables, communication interne
-          et externe. Des compétences directement utiles en ingénierie.
-        </p>
-      </div>
-
-      <div class="card">
-        <span class="num">04 / Se confronter</span>
-        <h3>Le monde extérieur</h3>
-        <p>
-          Compétitions, sponsors, partenaires industriels, fournisseurs :
-          nos projets nous mettent en lien direct avec l'écosystème automobile
-          et nous obligent à une exigence professionnelle.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== §04 SPONSORS -->
-<section class="sec" id="sponsors">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">§04</span>
-      <h2 class="sec-title">Partenaires</h2>
-      <span class="sec-tag">/ Nous soutenir</span>
-    </div>
-
-    <div class="sponsor-intro">
-      <p>
-        Une association étudiante, pour fonctionner et faire rouler ses véhicules,
-        a besoin de <strong class="hl">soutiens extérieurs</strong> : matériel,
-        services, financement, expertise. Vos contributions ont un impact direct,
-        mesurable et durable sur la formation que reçoivent nos membres.
-      </p>
-      <p class="muted">
-        Nous proposons des partenariats <strong>financiers</strong>, <strong>matériels</strong>
-        ou <strong>techniques</strong>, avec des contreparties concrètes :
-        visibilité sur les véhicules, présence aux événements, accès à de jeunes
-        ingénieurs en formation, livrables techniques. Le détail des niveaux
-        est ajustable selon votre intérêt.
-      </p>
-    </div>
-
-    <div class="tiers">
-      <div class="tier">
-        <span class="tier-name">— Niveau Soutien</span>
-        <h3>Soutien</h3>
-        <ul>
-          <li>Logo sur le site et la newsletter</li>
-          <li>Mention sur réseaux sociaux</li>
-          <li>Invitations aux temps forts</li>
-          <li>Reporting annuel</li>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="caisse-a-savon.html">Caisse à savon</a></li>
+          <li><a href="formula-student.html">Formula Student</a></li>
+          <li><a href="formation-cao.html">Formation CAO</a></li>
+          <li><a href="l-equipe.html">L’équipe</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn--primary btn--sm" href="https://www.helloasso.com/associations/formula-epf/formulaires/1" target="_blank" rel="noreferrer noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg><span>Nous soutenir</span></a>
       </div>
-
-      <div class="tier featured">
-        <span class="tier-name">— Niveau Partenaire</span>
-        <h3>Partenaire</h3>
-        <ul>
-          <li>Logo sur véhicules &amp; équipement</li>
-          <li>Communication renforcée</li>
-          <li>Accès privilégié aux étudiants (stages)</li>
-          <li>Visite atelier &amp; présentations</li>
-          <li>Reporting trimestriel détaillé</li>
-        </ul>
-      </div>
-
-      <div class="tier">
-        <span class="tier-name">— Niveau Principal</span>
-        <h3>Principal</h3>
-        <ul>
-          <li>Position principale sur les véhicules</li>
-          <li>Co-branding sur communication</li>
-          <li>Collaboration technique directe</li>
-          <li>Conditions sur-mesure</li>
-          <li>Cas d'usage / témoignage</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="why">
-      <h3>Pourquoi soutenir Formula EPF ?</h3>
-      <div class="why-grid">
-        <div>
-          <span class="num">/ 01</span>
-          <h4>Impact réel</h4>
-          <p>Sur une asso à taille humaine, votre soutien finance directement du matériel et de la fabrication, pas du marketing.</p>
-        </div>
-        <div>
-          <span class="num">/ 02</span>
-          <h4>Visibilité ciblée</h4>
-          <p>Vos couleurs sur des véhicules conduits par de futurs ingénieurs, dans un milieu motorsport étudiant en croissance.</p>
-        </div>
-        <div>
-          <span class="num">/ 03</span>
-          <h4>Recrutement</h4>
-          <p>Accès direct à des étudiants ingénieurs déjà engagés dans des projets techniques exigeants — un vivier pour stages et alternances.</p>
-        </div>
-        <div>
-          <span class="num">/ 04</span>
-          <h4>Transparence</h4>
-          <p>Reporting régulier, comptabilité tenue, démarche d'ingénierie documentée. Vous savez où va chaque euro.</p>
-        </div>
-      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h16"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" hidden><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
     </div>
   </div>
-</section>
-
-<!-- ===================================================== §05 CONTACT -->
-<section class="sec" id="contact">
-  <div class="wrap">
-    <div class="contact">
-      <div>
-        <span class="mono">§05 / Contact</span>
-        <h2>Discutons<br><em>du projet.</em></h2>
-        <p>
-          Sponsor potentiel, étudiant intéressé, école partenaire ou simple curieux —
-          écrivez-nous. Le bureau répond sous quelques jours.
-        </p>
-      </div>
-
-      <ul class="contact-list">
-        <li>
-          <span class="ckey">Email</span>
-          <a href="mailto:contact@formula-epf.fr">contact@formula-epf.fr</a>
-        </li>
-        <li>
-          <span class="ckey">Sponsoring</span>
-          <a href="mailto:sponsoring@formula-epf.fr">sponsoring@formula-epf.fr</a>
-        </li>
-        <li>
-          <span class="ckey">Adhésion</span>
-          <a href="mailto:contact@formula-epf.fr">contact@formula-epf.fr</a>
-        </li>
-        <li>
-          <span class="ckey">LinkedIn</span>
-          <a href="#" target="_blank" rel="noopener">/company/formula-epf</a>
-        </li>
-        <li>
-          <span class="ckey">Siège</span>
-          <span style="color:var(--text-mute)">55 Avenue du Président Wilson, 94230 Cachan</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="foot-block">
-      <span class="ftitle">Formula EPF</span>
-      <ul>
-        <li>Association loi 1901</li>
-        <li>Vocation pédagogique</li>
-        <li>EPF, école d'ingénieurs</li>
-      </ul>
-    </div>
-
-    <div class="foot-block">
-      <span class="ftitle">Projets</span>
-      <ul>
+  <div class="nav-mobile" id="menu-mobile">
+    <div class="wrap">
+      <nav aria-label="Navigation mobile">
+        <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
         <li><a href="caisse-a-savon.html">Caisse à savon</a></li>
         <li><a href="formula-student.html">Formula Student</a></li>
         <li><a href="formation-cao.html">Formation CAO</a></li>
-      </ul>
+        <li><a href="l-equipe.html">L’équipe</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary" href="https://www.helloasso.com/associations/formula-epf/formulaires/1" target="_blank" rel="noreferrer noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg><span>Nous soutenir</span></a>
     </div>
-
-    <div class="foot-block">
-      <span class="ftitle">Contact</span>
-      <ul>
-        <li><a href="mailto:contact@formula-epf.fr">contact@formula-epf.fr</a></li>
-        <li><a href="mailto:sponsoring@formula-epf.fr">sponsoring@formula-epf.fr</a></li>
-      </ul>
+  </div>
+</header>
+<main id="contenu">
+<section class="hero">
+  <img class="hero__img" src="images/photos/paddock-nevers-1000.webp" srcset="images/photos/paddock-nevers-600.webp 600w, images/photos/paddock-nevers-1000.webp 1000w, images/photos/paddock-nevers-1800.webp 1800w" sizes="100vw" alt="Un membre de Formula EPF, veste floquée Racing Team, devant une monoplace de Formula Student dans le paddock." width="1800" height="1493" fetchpriority="high" />
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="wrap">
+    <div data-reveal>
+      <p class="eyebrow text-race"><span class="bar" aria-hidden="true"></span>Association loi 1901 · EPF · Depuis 2020</p>
+      <h1 class="display">Concevoir,<br />fabriquer, <span>courir.</span></h1>
+      <p><strong>Formula EPF</strong> est l’association étudiante d’ingénierie automobile de l’EPF. Nous rassemblons des étudiants autour de projets concrets de conception, fabrication et participation à des compétitions, avec une vocation pédagogique assumée : apprendre l’ingénierie en construisant pour de vrai.</p>
+      <div class="actions">
+        <a class="btn btn--primary btn--lg" href="caisse-a-savon.html"><span>Découvrir nos projets</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn--ondark btn--lg" href="https://www.helloasso.com/associations/formula-epf/formulaires/1" target="_blank" rel="noreferrer noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg><span>Nous soutenir</span></a>
+      </div>
     </div>
+  </div>
+</section>
+<section class="stats tone-race">
+  <div class="wrap">
+    <dl>
+      <div data-reveal><dt class="display">2020</dt><dd>Année de fondation de l’association</dd></div>
+      <div data-reveal><dt class="display">7ᵉ</dt><dd>Association technique de ce genre fondée en France</dd></div>
+      <div data-reveal><dt class="display">4</dt><dd>Pôles techniques</dd></div>
+      <div data-reveal><dt class="display">1925</dt><dd>Création de l’EPF, notre école</dd></div>
+    </dl>
+  </div>
+</section>
+<section class="section tone-paper">
+  <div class="wrap">
+    <div class="heading-block" data-reveal>
+      <p class="eyebrow" style="color:var(--race-600)"><span class="bar" aria-hidden="true"></span>Nos projets</p>
+      <h2 class="display">Trois chantiers<br />menés en parallèle</h2>
+      <p class="lead mt-4">Un premier véhicule roulant, une monoplace de course en conception, et une formation ouverte à toute l’école.</p>
+    </div>
+    <ul class="grid-3" style="list-style:none;padding:0">
+      <li data-reveal><a class="card-link" href="caisse-a-savon.html">
+        <p class="eyebrow" style="color:var(--race-600)"><span class="dot"></span> Phase assemblage</p>
+        <h3 class="display">Caisse à savon</h3>
+        <p class="sub">Premier projet concret de l’asso</p>
+        <p class="sum">Notre premier véhicule : une caisse à savon conçue et fabriquée en interne. Le projet est aujourd’hui en phase d’assemblage — c’est notre première mise en pratique complète, du dessin au véhicule fini.</p>
+        <span class="more">Voir le projet <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a></li>
+      <li data-reveal><a class="card-link" href="formula-student.html">
+        <p class="eyebrow" style="color:var(--race-600)"><span class="dot"></span> Phase conception</p>
+        <h3 class="display">Formula Student</h3>
+        <p class="sub">Monoplace de course étudiante</p>
+        <p class="sum">Conception d’une monoplace de Formula Student, développée en interne sous-système par sous-système. Le projet est en phase d’études : dimensionnement, choix techniques, validation analytique.</p>
+        <span class="more">Voir le projet <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a></li>
+      <li data-reveal><a class="card-link" href="formation-cao.html">
+        <p class="eyebrow" style="color:var(--race-600)"><span class="dot dot--done"></span> Active</p>
+        <h3 class="display">Formation CAO</h3>
+        <p class="sub">Catia V5 — gratuit, ouvert à toute l’EPF</p>
+        <p class="sum">Une auto-formation à la CAO sur Catia V5, animée par les membres de l’association. Ouverte gratuitement à tous les étudiants de l’EPF, qu’ils soient membres de l’asso ou non.</p>
+        <span class="more">Voir le projet <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a></li>
+    </ul>
+  </div>
+</section>
+<section class="section tone-mist">
+  <div class="wrap split">
+    <div data-reveal>
+      <p class="eyebrow" style="color:var(--race-600)"><span class="bar" aria-hidden="true"></span>L’association</p>
+      <h2 class="display">7ᵉ association technique<br />de ce genre en France</h2>
+      <p class="lead mt-6">EPF FORMULA est une association étudiante technique fondée en 2020. Elle est la 7ème association technique de ce genre à être fondée en France.</p>
+      <p class="lead">Son objectif est de réunir des étudiants ingénieurs autour d’une compétition automobile la « Formula Student ».</p>
+      <a class="btn btn--outline mt-8" href="l-histoire.html"><span>Notre histoire</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+    <div class="photo-frame" data-reveal>
+      <span class="photo-corner" aria-hidden="true"></span>
+      <div class="photo photo--43"><img src="images/photos/monoplace-piste-1000.webp" srcset="images/photos/monoplace-piste-600.webp 600w, images/photos/monoplace-piste-1000.webp 1000w, images/photos/monoplace-piste-1800.webp 1800w" sizes="(min-width: 1024px) 45vw, 100vw" alt="Une monoplace de Formula Student lancée en piste, arrière-plan filé." width="1000" height="481" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+<section class="section tone-paper">
+  <div class="wrap">
+    <div class="heading-block" data-reveal>
+      <p class="eyebrow" style="color:var(--race-600)"><span class="bar" aria-hidden="true"></span>Organisation</p>
+      <h2 class="display">Quatre pôles techniques</h2>
+      <p class="lead mt-4">Notre association se compose de 4 pôles techniques, chacun dédié à un domaine spécifique. Un groupe est chargé de vérifier la bonne conformité avec la réglementation des pièces conçues par les différents pôles.</p>
+    </div>
+    <ul class="pole-grid">
+      <li data-reveal><span class="eyebrow" style="color:var(--race-600)">Véhicule</span><h3 class="mt-4 display" style="font-size:1.125rem">Aérodynamisme</h3><p class="mt-3" style="font-size:.875rem;color:var(--muted)">L’un des deux pôles consacrés au véhicule.</p></li>
+      <li data-reveal><span class="eyebrow" style="color:var(--race-600)">Véhicule</span><h3 class="mt-4 display" style="font-size:1.125rem">Châssis</h3><p class="mt-3" style="font-size:.875rem;color:var(--muted)">L’autre pôle consacré au véhicule.</p></li>
+      <li data-reveal><span class="eyebrow" style="color:var(--race-600)">Motorisation</span><h3 class="mt-4 display" style="font-size:1.125rem">GMP — Groupe moto-propulseur</h3><p class="mt-3" style="font-size:.875rem;color:var(--muted)">La motorisation et l’électronique.</p></li>
+      <li data-reveal><span class="eyebrow" style="color:var(--race-600)">Dynamique</span><h3 class="mt-4 display" style="font-size:1.125rem">Liaison au sol</h3><p class="mt-3" style="font-size:.875rem;color:var(--muted)">Le pôle consacré à la liaison au sol.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="section tone-ink">
+  <div class="wrap split">
+    <div data-reveal class="photo photo--169"><img src="images/photos/grille-formula-student-1050.webp" srcset="images/photos/grille-formula-student-600.webp 600w, images/photos/grille-formula-student-1050.webp 1050w" alt="Des dizaines de monoplaces de Formula Student alignées sur la grille de départ devant le public." width="1050" height="450" loading="lazy" /></div>
+    <div data-reveal>
+      <p class="eyebrow text-race"><span class="bar" aria-hidden="true"></span>La compétition</p>
+      <h2 class="display">Formula Student</h2>
+      <p class="mt-6 text-white-70" style="font-size:1.0625rem;line-height:1.7">La Formula Student est une compétition internationale ouverte aux étudiants, qui existe depuis plus de 30 ans. Son objectif est de concevoir une monoplace innovante, performante et économe en énergie. Née sous le nom de Formula SAE (Society of Automotive Engineers) aux États-Unis, elle est aujourd’hui plus connue sous le nom de Formula Student en Europe.</p>
+      <a class="btn btn--ondark mt-8" href="formula-student.html"><span>Comprendre la compétition</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+<section class="section tone-paper">
+  <div class="wrap">
+    <div class="heading-row heading-block">
+      <div data-reveal>
+        <p class="eyebrow" style="color:var(--race-600)"><span class="bar" aria-hidden="true"></span>L’équipe</p>
+        <h2 class="display">Le bureau</h2>
+        <p class="lead mt-4">L’équipe dirigeante supervise l’association, définit les orientations à suivre et assure le suivi d’un projet qui s’étale sur plusieurs années.</p>
+      </div>
+      <a class="btn btn--outline" href="l-equipe.html"><span>Toute l’équipe</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+    <ul class="team-grid">
+      <li>
+  <article class="member" data-reveal>
+    <div class="member__photo"><img src="images/equipe/gabriel-bremme-400.webp" srcset="images/equipe/gabriel-bremme-400.webp 400w" sizes="(min-width: 1024px) 20vw, 45vw" alt="Portrait de Gabriel BREMME" width="400" height="400" loading="lazy" /><span class="member__bar" aria-hidden="true"></span></div>
+    <h3>Gabriel <span>BREMME</span></h3>
+    <p>Président</p>
+    <a href="https://www.linkedin.com/in/gabriel-bremme-931a4125b" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn<span class="sr-only"> de Gabriel BREMME (nouvel onglet)</span></a>
+  </article>
+</li>
 
-    <div class="legal">
-      <span class="mono">© 2026 Formula EPF — Tous droits réservés</span>
-      <span class="mono">Site révision 1.0</span>
+      <li>
+  <article class="member" data-reveal>
+    <div class="member__photo"><img src="images/equipe/corentin-le-verre-400.webp" srcset="images/equipe/corentin-le-verre-400.webp 400w" sizes="(min-width: 1024px) 20vw, 45vw" alt="Portrait de Corentin LE VERRE" width="400" height="400" loading="lazy" /><span class="member__bar" aria-hidden="true"></span></div>
+    <h3>Corentin <span>LE VERRE</span></h3>
+    <p>Vice-Président</p>
+    <a href="https://www.linkedin.com/in/corentin-le-verre-a21221301" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn<span class="sr-only"> de Corentin LE VERRE (nouvel onglet)</span></a>
+  </article>
+</li>
+
+      <li>
+  <article class="member" data-reveal>
+    <div class="member__photo"><img src="images/equipe/augustin-lequeux-400.webp" srcset="images/equipe/augustin-lequeux-400.webp 400w, images/equipe/augustin-lequeux-800.webp 800w" sizes="(min-width: 1024px) 20vw, 45vw" alt="Portrait de Augustin LEQUEUX" width="400" height="400" loading="lazy" /><span class="member__bar" aria-hidden="true"></span></div>
+    <h3>Augustin <span>LEQUEUX</span></h3>
+    <p>Secrétaire</p>
+    <a href="https://www.linkedin.com/in/augustin-lequeux-9a65792a9" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn<span class="sr-only"> de Augustin LEQUEUX (nouvel onglet)</span></a>
+  </article>
+</li>
+
+      <li>
+  <article class="member" data-reveal>
+    <div class="member__photo"><img src="images/equipe/yannis-bekkour-400.webp" srcset="images/equipe/yannis-bekkour-400.webp 400w, images/equipe/yannis-bekkour-800.webp 800w" sizes="(min-width: 1024px) 20vw, 45vw" alt="Portrait de Yannis BEKKOUR" width="400" height="400" loading="lazy" /><span class="member__bar" aria-hidden="true"></span></div>
+    <h3>Yannis <span>BEKKOUR</span></h3>
+    <p>Trésorier</p>
+    
+  </article>
+</li>
+
+    </ul>
+  </div>
+</section>
+<section class="cta-band tone-carbon">
+  <div class="brand-line" aria-hidden="true"></div>
+  <div class="wrap">
+    <div data-reveal>
+      <h2 class="display">Discutons <span>du projet.</span></h2>
+      <p>Sponsor potentiel, étudiant intéressé, école partenaire ou simple curieux — écrivez-nous. Le bureau répond sous quelques jours.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn--primary btn--lg" href="https://www.helloasso.com/associations/formula-epf/formulaires/1" target="_blank" rel="noreferrer noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg><span>Nous soutenir</span></a>
+      <a class="btn btn--ondark btn--lg" href="contact.html"><span>Nous contacter</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="brand-line" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="EPF Formula Team — retour à l’accueil">
+          <img src="images/brand/logo-epf-formula.webp" width="378" height="143" alt="EPF Formula Team — Racing Team" />
+        </a>
+        <p class="purpose">Réunir des étudiants ingénieurs autour d’une compétition automobile, la « Formula Student ».</p>
+        <a class="ig" href="https://www.instagram.com/formula_epf?igsh=MTBjYTFjcDBtNm1sYQ%3D%3D" target="_blank" rel="noreferrer noopener" aria-label="Formula EPF sur Instagram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+      </div>
+      <div>
+        <h2>Informations</h2>
+        <p class="legal">EPF Formula Team</p>
+        <address>
+          <a href="https://www.google.com/maps/search/?api=1&query=55+Avenue+du+Pr%C3%A9sident+Wilson+94230+Cachan" target="_blank" rel="noreferrer noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>55 Avenue du Président Wilson<br />94230 Cachan</span></a>
+        </address>
+      </div>
+      <div>
+        <h2>Horaires</h2>
+        <ul class="hours" style="list-style:none;padding:0">
+          <li style="display:flex;gap:.6rem;margin-bottom:.75rem"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><strong style="color:#fff;display:block">Lundi au vendredi</strong>8h – 21h</span></li>
+          <li style="display:flex;gap:.6rem"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><strong style="color:#fff;display:block">Samedi</strong>8h – 13h</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contacts</h2>
+        <ul class="mail-list">
+          <li><a href="mailto:sponsor.formulaepf@epfedu.fr"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span><span>E-mail</span>sponsor.formulaepf@epfedu.fr</span></a></li>
+        </ul>
+        <nav aria-label="Navigation de pied de page">
+          <ul class="foot-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="caisse-a-savon.html">Caisse à savon</a></li>
+            <li><a href="formula-student.html">Formula Student</a></li>
+            <li><a href="formation-cao.html">Formation CAO</a></li>
+            <li><a href="l-equipe.html">L’équipe</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="l-histoire.html">L’histoire</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="https://www.helloasso.com/associations/formula-epf/formulaires/1" target="_blank" rel="noreferrer noopener" style="color:#ff5561;font-weight:600">Nous soutenir</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-copy">
+      <p>Copyright © 2026 Formula EPF</p>
+      <a href="mentions-legales.html">Mentions légales</a>
     </div>
   </div>
 </footer>
-
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.sec, .hero h1, .hero-lead, .hero-cta, .hero-meta')
-  .forEach(el => { el.classList.add('reveal'); observer.observe(el); });
-</script>
-
+<script src="js/site.js"></script>
 </body>
 </html>

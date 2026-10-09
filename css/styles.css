@@ -891,6 +891,21 @@ body.nav-open {
   .team-grid--3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .team-grid--3 > .team-grid__solo {
+    grid-column: 2;
+    max-width: none;
+    width: auto;
+    justify-self: stretch;
+  }
+}
+
+/* Dernière fiche seule sur une ligne (ex. Rémi Lepage) : centrée, même largeur. */
+.team-grid__solo {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: calc((100% - 1.5rem) / 2);
 }
 
 .member {
@@ -1150,6 +1165,10 @@ body.nav-open {
   height: 1rem;
   margin-top: 0.15rem;
   color: var(--race-500);
+}
+
+.check--off {
+  color: #ce0000;
 }
 
 @media (min-width: 1024px) {
