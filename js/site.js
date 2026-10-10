@@ -61,34 +61,17 @@
 
   var poleMembers = {
     communications: [
-      { firstName: "Rémi", lastName: "LEPAGE" },
+      { firstName: "Rémi", lastName: "Lepage" },
       { firstName: "Julien", lastName: "DNL" },
       { firstName: "Sky", lastName: "" },
     ],
-    event: [
-      { firstName: "Rémi", lastName: "LEPAGE" },
-      { firstName: "Julien", lastName: "DNL" },
-      { firstName: "Sky", lastName: "" },
-    ],
+    event: [],
   };
 
-  function poleCard(member) {
+  function poleName(member) {
     var last = member.lastName || "";
-    var initials = (member.firstName.charAt(0) + last.charAt(0)).toUpperCase();
-    var media = member.photo
-      ? '<img src="' + member.photo + '" alt="Portrait de ' + member.firstName + (last ? " " + last : "") + '" width="400" height="400" loading="lazy" />'
-      : '<div class="mono" aria-hidden="true">' + initials + "</div>";
-    var role = member.role ? "<p>" + member.role + "</p>" : "";
-    var title = last
-      ? member.firstName + " <span>" + last + "</span>"
-      : member.firstName;
-    return (
-      "<li><article class=\"member\">" +
-      '<div class="member__photo">' + media + "</div>" +
-      "<h3>" + title + "</h3>" +
-      role +
-      "</article></li>"
-    );
+    var label = last ? member.firstName + " " + last : member.firstName;
+    return "<li>" + label + "</li>";
   }
 
   Object.keys(poleMembers).forEach(function (key) {
@@ -97,7 +80,7 @@
     var list = poleMembers[key];
     if (!grid) return;
     if (list.length) {
-      grid.innerHTML = list.map(poleCard).join("");
+      grid.innerHTML = list.map(poleName).join("");
       grid.classList.add("is-filled");
       if (empty) empty.hidden = true;
     }
