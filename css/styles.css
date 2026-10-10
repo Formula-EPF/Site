@@ -1174,13 +1174,25 @@ body.nav-open {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Convention Actualités : chaque .post a date + titre + galerie (1+ photos) + un texte. */
+/* Convention Actualités : date, titre, 1+ photos (flèches, clic pour agrandir) et un texte.
+   Bureau : galerie compacte à gauche, titre + date + texte à droite.
+   Mobile : galerie au-dessus du texte. */
 .posts {
   display: grid;
   gap: 3.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.post {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.post__body {
+  min-width: 0;
 }
 
 .post time {
@@ -1198,14 +1210,14 @@ body.nav-open {
 }
 
 .post__text {
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--muted);
 }
 
 .post-gallery {
-  margin-top: 1.5rem;
+  width: min(100%, 15.5rem);
 }
 
 .post-gallery__stage {
@@ -1213,6 +1225,22 @@ body.nav-open {
   overflow: hidden;
   background: var(--ink-900);
   aspect-ratio: 3 / 4;
+  max-height: 22rem;
+}
+
+@media (min-width: 768px) {
+  .post {
+    grid-template-columns: 15.5rem minmax(0, 1fr);
+    gap: 1.5rem 1.75rem;
+  }
+
+  .post-gallery {
+    width: 15.5rem;
+  }
+
+  .post-gallery__stage {
+    max-height: none;
+  }
 }
 
 .post-gallery__photo {
