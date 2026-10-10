@@ -60,7 +60,11 @@
   }
 
   var poleMembers = {
-    communications: [],
+    communications: [
+      { firstName: "Rémi", lastName: "LEPAGE" },
+      { firstName: "Julien", lastName: "DNL" },
+      { firstName: "Sky", lastName: "" },
+    ],
     event: [
       { firstName: "Rémi", lastName: "LEPAGE" },
       { firstName: "Julien", lastName: "DNL" },
@@ -100,10 +104,16 @@
   });
 
   document.querySelectorAll(".member__more").forEach(function (btn) {
-    btn.addEventListener("click", function () {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       var id = btn.getAttribute("aria-controls");
       var dlg = id && document.getElementById(id);
-      if (dlg && typeof dlg.showModal === "function") dlg.showModal();
+      if (dlg && typeof dlg.showModal === "function") {
+        setTimeout(function () {
+          dlg.showModal();
+        }, 0);
+      }
     });
   });
 
@@ -114,8 +124,7 @@
       });
     });
     dlg.addEventListener("click", function (e) {
-      var panel = dlg.querySelector(".pole-dialog__panel");
-      if (e.target === dlg || (panel && !panel.contains(e.target))) dlg.close();
+      if (e.target === dlg) dlg.close();
     });
   });
 
