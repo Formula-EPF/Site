@@ -61,19 +61,27 @@
 
   var poleMembers = {
     communications: [],
-    event: [],
+    event: [
+      { firstName: "Rémi", lastName: "LEPAGE" },
+      { firstName: "Julien", lastName: "DNL" },
+      { firstName: "Sky", lastName: "" },
+    ],
   };
 
   function poleCard(member) {
-    var initials = (member.firstName.charAt(0) + member.lastName.charAt(0)).toUpperCase();
+    var last = member.lastName || "";
+    var initials = (member.firstName.charAt(0) + last.charAt(0)).toUpperCase();
     var media = member.photo
-      ? '<img src="' + member.photo + '" alt="Portrait de ' + member.firstName + " " + member.lastName + '" width="400" height="400" loading="lazy" />'
+      ? '<img src="' + member.photo + '" alt="Portrait de ' + member.firstName + (last ? " " + last : "") + '" width="400" height="400" loading="lazy" />'
       : '<div class="mono" aria-hidden="true">' + initials + "</div>";
     var role = member.role ? "<p>" + member.role + "</p>" : "";
+    var title = last
+      ? member.firstName + " <span>" + last + "</span>"
+      : member.firstName;
     return (
       "<li><article class=\"member\">" +
       '<div class="member__photo">' + media + "</div>" +
-      "<h3>" + member.firstName + " <span>" + member.lastName + "</span></h3>" +
+      "<h3>" + title + "</h3>" +
       role +
       "</article></li>"
     );
